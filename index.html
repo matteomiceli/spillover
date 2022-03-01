@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="./app.js"></script>
+        <title>Spillover</title>
+    </head>
+    <body>
+        <h2>Enter comma-separated values</h2>
+        <p>eg. 2015,4 would be year=2015, number of chargers=4</p>
+        <div>
+            <input
+                type="text"
+                id="discount"
+                placeholder="total rebates allowed (eg. 10)"
+            />
+            <br />
+            <textarea
+                name="text"
+                id="text"
+                cols="30"
+                rows="10"
+                placeholder="2012,4"
+            ></textarea>
+            <button onclick="handleSubmit()">Calculate</button>
+            <div id="table"></div>
+        </div>
+    </body>
+</html>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
